@@ -1,0 +1,147 @@
+
+body  {
+
+      display:grid;
+      grid-template-areas: 
+      "hd hd hd hd hd"
+      "sd sd blog blog blog"
+      "ft ft ft ft ft";
+  }
+
+nav {
+	display:flex;
+	flex-direction: row;
+	justify-content:space-between;
+}
+
+h2 {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+header{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	min-height: 60px;
+}
+
+ul {
+	display:inline;
+}
+
+li {
+	display:inline;
+	color:blue;
+	padding: 8px;
+}
+
+header {
+  grid-area: hd;
+  background-color: cyan;
+}
+
+aside {
+  grid-area: sd;
+  background-color: red;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction:column;
+  padding: 10px;
+}
+
+.blog-category{
+	border:none;
+	padding: 8px 16px 8px 16px;
+	margin-top: 10px;
+}
+
+main {
+  grid-area: blog;
+  background-color: green;
+}
+
+footer {
+	grid-area: ft;
+	background-color: cyan;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 24px;
+	background-color: #fff000;
+	padding: 24px;
+}
+
+.card {
+	padding: 2em;
+	background-color: #ffffff;
+}
+
+.post-actions > button{
+	border: none;
+}
+
+.post-actions{
+	display:flex;
+	justify-content: space-between;
+	border: none;
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+	
+	body  {
+
+      display:grid;
+      grid-template-areas: 
+      "hd"
+      "sd"
+      "blog"
+      "ft";
+      max-width: 100%;
+     }
+
+    header {
+	display:flex;
+	flex-direction: column;
+	align-content-content: center;
+    }
+
+    #brand {
+    padding-top: 16px;
+    }
+
+    .grid-container {
+    display: flex;
+	flex-direction: column;
+    }
+
+    .card {
+    margin-bottom: 20px;	
+    }
+
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: repeat (3 1fr);
+}
+
+}
+
+
