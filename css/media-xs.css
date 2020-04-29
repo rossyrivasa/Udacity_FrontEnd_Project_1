@@ -1,5 +1,5 @@
-/* Extra small devices (phones, 600px and down) 
-@media only screen and (max-width: 767px) */
+/* Extra small devices (phones, 600px and down)  */
+@media only screen and (max-width: 767px) {
 
 body  {
       display:grid;
@@ -35,4 +35,4 @@ body  {
     margin-bottom: 20px;	
     }
 
-
+}
